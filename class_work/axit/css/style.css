@@ -1,0 +1,126 @@
+* { padding: 0; margin: 0; }
+
+a{
+    color: #eeeeee;
+    text-decoration: none;
+}
+.header{
+    background: #000000;
+    padding: 16px 0;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    color: #eeeeee;
+}
+.menu_item {
+    display: inline-block;
+    margin-right: 10px;
+}
+.menu_item:last-child{
+    margin-right: 0px;
+}
+.top{
+    background-color: black;
+    background-image: url("../img/slide.png");
+    padding: 100px 0 60px 0;
+}
+.top_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.description{
+    width: 500px;
+    display: inline-block;
+}
+.description_logo{
+    margin-bottom: 30px;
+}
+.description_title{
+    color: #eeeeee;
+    font-size: 36px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: "Myriad Pro", sans-serif;
+}
+.description_text{
+    color: #eeeeee;
+    font-size: 16px;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgba(255,255, 255, 0.8);
+    line-height: 1.438;
+}
+.description_button{
+    color: #eeeeee;
+    padding: 10px 25px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    line-height: 1.2;
+    font-size: 15px;
+    font-family: 'OpenSans', sans-serif;
+}
+.top-form{
+    width: 330px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.form_title{
+    height: 25px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+}
+.orange_title{
+    color: #ff9b51;
+}
+.top-form_input{
+    display: block;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #D6D6D6;
+    height: 30px;
+    width: 100%;
+    margin-top: 40px;
+}
+.top-form_input::placeholder{
+    padding-left: 10px;
+}
+
+.input-container{
+    margin: 0px 40px;
+}
+.top-form_submit{
+    height: 54px;
+    width: 100%;
+    background-color: #FF9B51;
+    color: white;
+    margin-top: 50px;
+}
+.social-media{
+
+}
+.media_container{
+padding-top: 10px;
+}
+.media_text{
+    display: inline-block;
+}
+.media_text p{
+    color: #cccccc;
+}
+.media_icons{
+    display: inline-block;
+}
+.media_icons >i{
+    padding-left: 60px;
+    color: #cccccc;
+}
