@@ -106,10 +106,11 @@ a{
     margin-top: 50px;
 }
 .social-media{
-
+    box-shadow: 0 5px 5px -5px #333;
 }
 .media_container{
-padding-top: 10px;
+    padding: 20px 0;
+
 }
 .media_text{
     display: inline-block;
