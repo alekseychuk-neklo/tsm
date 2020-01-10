@@ -1,6 +1,6 @@
 window.onload = function() {
     var anchors = document.getElementsByClassName('tab-links');
-    document.getElementsByClassName('tab-content')[0].style.display = 'block';
+    document.getElementsByClassName('tab-content')[0].style.display = 'flex';
     for(var i = 0; i < anchors.length; i++) {
         anchors[i].onclick = function(event) {
             for(var j = 0; j < anchors.length; j++) {
@@ -12,7 +12,7 @@ window.onload = function() {
                 tabContents[j].style.display = "none";
             }
             var activeContent = document.getElementById(event.currentTarget.dataset.id);
-            activeContent.style.display = 'block';
+            activeContent.style.display = 'flex';
         };
 
     }

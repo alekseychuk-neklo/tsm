@@ -150,4 +150,24 @@ a{
     margin-left: 105px;
     display: none;
 }
+.tab-content-text{
+    display: inline-block;
+}
+.tab-content-text h2{
+    padding-bottom: 52px;
+}
+.tab-content-text p{
+    margin-bottom: 30px;
+    color: #86878b;
+    font: 400 14px / 20px "Open Sans", serif;
+}
+.tab-content-img{
+    padding-left: 100px;
+}
+.orange_button{
+    display: inline-block;
+    height: 54px;
+    color: white;
+    background-color: #FF9B51;
+}
 
