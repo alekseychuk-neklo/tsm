@@ -21,7 +21,6 @@ function changeElementsVisible(itemList, displayValue='none'){
 
 window.onload = function() {
     const anchors = document.getElementsByClassName('tab-links');
-    document.getElementsByClassName('tab-content')[0].style.display = 'flex';
     changeElementsVisible([document.getElementsByClassName('tab-content')[0]], 'flex');
     for (let item of anchors) {
         item.onclick = function(event) {
