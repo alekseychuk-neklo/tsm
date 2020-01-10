@@ -1,19 +1,33 @@
-window.onload = function() {
-    var anchors = document.getElementsByClassName('tab-links');
-    document.getElementsByClassName('tab-content')[0].style.display = 'flex';
-    for(var i = 0; i < anchors.length; i++) {
-        anchors[i].onclick = function(event) {
-            for(var j = 0; j < anchors.length; j++) {
-                anchors[j].classList.remove('active-tab');
-            }
-            event.currentTarget.className += ' active-tab';
-            var tabContents = document.getElementsByClassName('tab-content');
-            for(var j = 0; j < tabContents.length; j++) {
-                tabContents[j].style.display = "none";
-            }
-            var activeContent = document.getElementById(event.currentTarget.dataset.id);
-            activeContent.style.display = 'flex';
-        };
+function activateTab(element){
+    changeClass([element], 'active-tab', true);
+    const tabContents = document.getElementsByClassName('tab-content');
+    changeElementsVisible(tabContents, 'none');
+    let activeContent = document.getElementById(element.dataset.id);
+    changeElementsVisible([activeContent], 'flex');
 
+}
+
+function changeClass(itemList, className, add=false){
+    for (let item of itemList) {
+        add?item.classList.add(className):item.classList.remove(className);
+    }
+}
+
+function changeElementsVisible(itemList, displayValue='none'){
+    for (let item of itemList) {
+        item.style.display = displayValue;
+    }
+}
+
+window.onload = function() {
+    const anchors = document.getElementsByClassName('tab-links');
+    document.getElementsByClassName('tab-content')[0].style.display = 'flex';
+    changeElementsVisible([document.getElementsByClassName('tab-content')[0]], 'flex');
+    for (let item of anchors) {
+        item.onclick = function(event) {
+            changeClass(anchors, 'active-tab', false);
+            activateTab(event.currentTarget);
+
+        };
     }
 };

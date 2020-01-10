@@ -130,6 +130,7 @@ a{
 }
 .tab_container{
     padding-top: 70px;
+    padding-bottom: 110px;
     display: flex;
     justify-content: space-between;
 }
@@ -142,6 +143,7 @@ a{
     background-color: black;
     margin-bottom: 2px;
     display: block;
+    color: #eeeeee;
 }
 .active-tab{
     background-color: #f98939;
@@ -166,8 +168,9 @@ a{
 }
 .orange_button{
     display: inline-block;
-    height: 54px;
+    padding: 5px 15px;
     color: white;
     background-color: #FF9B51;
+    border-radius: 3px;
 }
 
