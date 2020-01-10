@@ -16,7 +16,7 @@ function changeElementsVisible(itemList, displayValue = 'none') {
 
 window.onload = function () {
     changeElementsVisible([document.getElementsByClassName('tab-content')[0]], 'flex');
-    Array.from( anchors = document.getElementsByClassName('tab-links')).map(item => {
+    Array.from(anchors = document.getElementsByClassName('tab-links')).map(item => {
         item.onclick = (event) => {
             changeClass(anchors, 'active-tab', false);
             activateTab(event.currentTarget);
