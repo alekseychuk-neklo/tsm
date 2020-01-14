@@ -333,6 +333,9 @@ a{
     text-align: center;
     padding-bottom: 80px;
 }
+.contact_container> h2{
+    margin-top: 80px;
+}
 .contact_form{
     margin-bottom: 20px;
 }
