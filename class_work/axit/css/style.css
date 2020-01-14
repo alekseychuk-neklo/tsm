@@ -259,3 +259,20 @@ a{
     min-height: 3px;
     border-top: 0px;
 }
+.reviews{
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.review_item{
+    display: inline-block;
+    width: 270px;
+}
+
+
+.review_text{
+    background-color: #C0C0C0;
+}
