@@ -1,0 +1,34 @@
+.checkbox{
+    display: none;
+}
+.fake-checkbox{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.checkbox:checked ~.fake-checkbox{
+    background-color: orange;
+}
+.checkbox:checked ~.features_middle{
+    display: inline-block;
+}
+.wrapper{
+    position: relative;
+    border: 1px solid black;
+    margin-top: 200px;
+}
+.features_middle{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid red;
+
+}
