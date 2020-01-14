@@ -34,4 +34,9 @@ $(document).ready(function(){
         arrows : false,
         autoplaySpeed: 2000,
     });
+    $('.contact_form').submit(function (e) {
+        e.preventDefault();
+        Swal.fire('Any fool can use a computer');
+    })
+
 });
