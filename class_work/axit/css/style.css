@@ -329,6 +329,34 @@ a{
 .design_text{
     margin-bottom: 30px;
 }
+.contact_container{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.contact_form{
+    margin-bottom: 20px;
+}
+.flex_form{
+    display: flex;
+    justify-content: space-between;
+
+}
+.left, .right{
+    display: inline-block;
+    width: 50%;
+}
+.right{
+    margin-left: 20px;
+}
+.right> textarea{
+    height: 175px;
+}
+.submit_block{
+    display: block;
+}
+.msg_button{
+    margin-top: 40px;
+}
 .footer{
     text-align: center;
 }
