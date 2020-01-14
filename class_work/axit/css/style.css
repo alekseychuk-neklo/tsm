@@ -315,6 +315,8 @@ a{
 .design{
     background-color: black;
     background-image: url("../img/custom_section.png");
+    /*background-attachment: scroll;*/
+    background-size:cover;
     padding: 100px 0 60px 0;
 }
 .design_container{
@@ -326,4 +328,17 @@ a{
 }
 .design_text{
     margin-bottom: 30px;
+}
+.footer{
+    text-align: center;
+}
+.footer_container{
+    padding: 40px 0;
+}
+.footer_icons_list li{
+    display: inline;
+    margin-left: 25px;
+}
+.copyright{
+    margin-top: 10px;
 }
