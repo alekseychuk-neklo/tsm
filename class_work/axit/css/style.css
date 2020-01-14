@@ -312,3 +312,18 @@ a{
     display: inline-block;
     width: 270px;
 }
+.design{
+    background-color: black;
+    background-image: url("../img/custom_section.png");
+    padding: 100px 0 60px 0;
+}
+.design_container{
+    text-align: center;
+    color: #eeeeee;
+}
+.design_container >.after_delimiter:after{
+    background-color: #eeeeee;
+}
+.design_text{
+    margin-bottom: 30px;
+}
