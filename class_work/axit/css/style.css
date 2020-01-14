@@ -232,6 +232,9 @@ a{
     text-align: center;
     margin: 110px auto;
 }
+.pricing_container >h2{
+    padding-top: 110px;
+}
 .pricing_item{
     background-color: #ffffff;
     width: 345px;
