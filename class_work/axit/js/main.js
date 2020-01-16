@@ -58,14 +58,15 @@ $(document).ready(function(){
     })
     $('.burger').click(function(e){
         e.preventDefault();
-        let showed = $(this).data('data-show');
-        if(!showed){
-            console.log('show');
-            $(".menu").fadeIn("slow");
-        }else{
-            console.log('hide');
-            $(".menu").fadeOut("slow");
-        }
-        $(this).data('data-show', !showed);
+        // let showed = $(this).data('data-show');
+        // if(!showed){
+        //     console.log('show');
+        //     $(".menu").fadeIn("slow");
+        // }else{
+        //     console.log('hide');
+        //     $(".menu").fadeOut("slow");
+        // }
+        // $(this).data('data-show', !showed);
+        $(".menu").slideToggle();
     })
 });
