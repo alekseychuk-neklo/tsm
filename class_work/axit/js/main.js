@@ -25,20 +25,9 @@ window.onload = function () {
 
 };
 
-function hideMenu(){
-    let windowWidth = $(window).width();
-    if(windowWidth<768){
-        $(".menu").hide();
-    }else{
-        $(".menu").show();
-    }
-}
-$(window).resize(function(){
-    hideMenu();
-})
 //jQuery init
 $(document).ready(function(){
-    hideMenu();
+    // hideMenu();
     $('.reviews_items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -60,21 +49,12 @@ $(document).ready(function(){
               }
         ]
     });
-    $('.contact_form').submit(function (e) {
-        e.preventDefault();
-        Swal.fire('Any fool can use a computer');
-    })
-    $('.burger').click(function(e){
-        e.preventDefault();
-        // let showed = $(this).data('data-show');
-        // if(!showed){
-        //     console.log('show');
-        //     $(".menu").fadeIn("slow");
-        // }else{
-        //     console.log('hide');
-        //     $(".menu").fadeOut("slow");
-        // }
-        // $(this).data('data-show', !showed);
-        $(".menu").slideToggle();
-    })
+});
+
+
+document.getElementById('burger').addEventListener('click', function () {
+    let isCross = Array.from(this.classList).includes('cross');
+    isCross?this.classList.remove('cross'):this.classList.add('cross');
+    let menu =document.getElementById('menu')
+    !isCross? menu.classList.add('visible'):menu.classList.remove('visible');
 });
