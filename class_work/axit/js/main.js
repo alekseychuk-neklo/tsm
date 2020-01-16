@@ -29,6 +29,8 @@ function hideMenu(){
     let windowWidth = $(window).width();
     if(windowWidth<768){
         $(".menu").hide();
+    }else{
+        $(".menu").show();
     }
 }
 $(window).resize(function(){
