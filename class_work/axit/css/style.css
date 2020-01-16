@@ -36,6 +36,9 @@ a{
 .menu_item:last-child{
     margin-right: 0px;
 }
+.burger{
+    display: none;
+}
 .top{
     background-color: black;
     background-image: url("../img/slide.png");
