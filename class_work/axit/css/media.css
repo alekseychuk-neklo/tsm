@@ -89,9 +89,10 @@
         /* height: 100vh; */
     }
     .menu_item{
-         padding: 10px;  
-         width: 100px;
-         /* border-bottom: 1px solid orangered;  */
+        padding: 10px 0;
+        width: 100vw;
+        text-align: center;
+        border-bottom: 1px solid orangered;
         
     }
     .menu_item a{
