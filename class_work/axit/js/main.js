@@ -52,7 +52,14 @@ $(document).ready(function(){
         e.preventDefault();
         Swal.fire('Any fool can use a computer');
     })
-    $('.burger').onclick(function(e){
-        alert(123);
+    $('.burger').click(function(e){
+        e.preventDefault();
+        let showed = this.data('show');
+        if(!!showed){
+            $("menu").fadeIn("slow");
+        }else{
+            $("menu").fadeOut("slow");
+        }
+        this.data('show', !!showed);
     })
 });
