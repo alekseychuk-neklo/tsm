@@ -25,12 +25,16 @@ window.onload = function () {
 
 };
 
-//jQuery init
-$(document).ready(function(){
+function hideMenu(){
     let windowWidth = $(window).width();
     if(windowWidth<768){
         $(".menu").hide();
     }
+}
+$(window).resize(()=> hideMenu())
+//jQuery init
+$(document).ready(function(){
+    
     $('.reviews_items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
