@@ -54,12 +54,13 @@ $(document).ready(function(){
     })
     $('.burger').click(function(e){
         e.preventDefault();
-        let showed = this.data('show');
+        let showed = this.getAttribute('data-show');
         if(!!showed){
             $("menu").fadeIn("slow");
         }else{
             $("menu").fadeOut("slow");
         }
-        this.data('show', !!showed);
+        this.setAttribute('show', !!showed);
     })
+    $('.burger').click(function(e){})
 });
