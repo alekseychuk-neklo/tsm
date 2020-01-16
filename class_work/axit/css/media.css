@@ -63,7 +63,7 @@
     .burger:before, .burger:after, .burger span{
         background-color: #ffffff;
         position: absolute;
-        width: 100%;
+        width: 100vw;
         height: 2px;
         left: 0;
     }
