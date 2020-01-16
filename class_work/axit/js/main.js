@@ -56,9 +56,9 @@ $(document).ready(function(){
         e.preventDefault();
         let showed = this.getAttribute('data-show');
         if(!!showed){
-            $("menu").fadeIn("slow");
+            $(".menu").fadeIn("slow");
         }else{
-            $("menu").fadeOut("slow");
+            $(".menu").fadeOut("slow");
         }
         this.setAttribute('show', !!showed);
     })
