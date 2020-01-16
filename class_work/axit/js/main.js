@@ -27,7 +27,6 @@ window.onload = function () {
 
 //jQuery init
 $(document).ready(function(){
-    $('.menu').css('display','none');
     $('.reviews_items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
