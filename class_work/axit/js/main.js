@@ -60,7 +60,6 @@ $(document).ready(function(){
         e.preventDefault();
         let showed = $(this).data('data-show');
         if(!!showed){
-            $(this).re
             $(".menu").fadeIn("slow");
         }else{
             $(".menu").fadeOut("slow");
