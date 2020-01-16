@@ -31,10 +31,12 @@ function hideMenu(){
         $(".menu").hide();
     }
 }
-$(window).resize(()=> hideMenu())
+$(window).resize(function(){
+    hideMenu();
+})
 //jQuery init
 $(document).ready(function(){
-    
+    hideMenu();
     $('.reviews_items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
