@@ -37,7 +37,7 @@ $(document).ready(function(){
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
               }
             },
             {
@@ -52,5 +52,7 @@ $(document).ready(function(){
         e.preventDefault();
         Swal.fire('Any fool can use a computer');
     })
-
+    $('.burger').onclick(function(e){
+        alert(123);
+    })
 });

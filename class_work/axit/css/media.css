@@ -76,7 +76,27 @@
     .burger:after{
         bottom: 0;
     }
-
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 63px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffff;
+        width: 100vw;
+        align-items: center;
+        /* height: 100vh; */
+    }
+    .menu_item{
+         padding: 10px;  
+         width: 100px;
+         /* border-bottom: 1px solid orangered;  */
+        
+    }
+    .menu_item a{
+        color: orangered;
+    }
 
 
     .media_icons {
