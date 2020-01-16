@@ -114,3 +114,8 @@
         width: 100%;
     }
 }
+@media screen and (mix-width: 768px) {
+    .menu{
+        display: block;
+    }
+}
