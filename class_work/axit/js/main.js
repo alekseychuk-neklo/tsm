@@ -59,7 +59,7 @@ $(document).ready(function(){
     $('.burger').click(function(e){
         e.preventDefault();
         let showed = $(this).data('data-show');
-        if(!!showed){
+        if(!showed){
             $(".menu").fadeIn("slow");
         }else{
             $(".menu").fadeOut("slow");
