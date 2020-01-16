@@ -43,8 +43,11 @@
         text-align: center;
         margin: 20px 0;
     }
+    .media_icons i{
+        padding-left: 0;
+    }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .container{
         width: 80%;
     }
