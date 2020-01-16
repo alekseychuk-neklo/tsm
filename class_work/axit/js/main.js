@@ -27,6 +27,10 @@ window.onload = function () {
 
 //jQuery init
 $(document).ready(function(){
+    let windowWidth = $(window).width();
+    if(windowWidth<768){
+        $(".menu").hide();
+    }
     $('.reviews_items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -56,7 +60,7 @@ $(document).ready(function(){
         e.preventDefault();
         let showed = $(this).data('data-show');
         if(!!showed){
-            $(this).
+            $(this).re
             $(".menu").fadeIn("slow");
         }else{
             $(".menu").fadeOut("slow");
