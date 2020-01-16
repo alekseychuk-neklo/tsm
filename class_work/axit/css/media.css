@@ -81,8 +81,7 @@
         top: 0;
         left: 0;
         margin-top: 63px;
-      
-       
+        display: none;
         background-color: #ffff;
         width: 100vw;
         align-items: center;
