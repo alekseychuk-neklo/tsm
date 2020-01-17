@@ -26,35 +26,33 @@ window.onload = function () {
 };
 
 //jQuery init
-$(document).ready(function(){
+$(document).ready(function () {
     // hideMenu();
     $('.reviews_items').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true ,
-        arrows : false,
+        autoplay: true,
+        arrows: false,
         autoplaySpeed: 2000,
         responsive: [
             {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-              }
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
             },
             {
                 breakpoint: 992,
                 settings: {
-                  slidesToShow: 2
+                    slidesToShow: 2
                 }
-              }
+            }
         ]
     });
 });
 
-
 document.getElementById('burger').addEventListener('click', function () {
     let isCross = Array.from(this.classList).includes('cross');
-    isCross?this.classList.remove('cross'):this.classList.add('cross');
-    let menu =document.getElementById('menu')
-    !isCross? menu.classList.add('visible'):menu.classList.remove('visible');
+    this.classList[isCross ? 'remove' : 'add']('cross');
+    document.getElementById('menu').classList[isCross ? 'remove' : 'add']('visible');
 });
