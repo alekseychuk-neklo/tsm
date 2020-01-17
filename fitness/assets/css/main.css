@@ -1,0 +1,76 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    -webkit-transform: translateZ(0);
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    text-transform: uppercase;
+
+}
+.logo{
+    color: black;
+    font-size: 22px;
+    font-family: 'Russo One',sans-serif;
+    line-height: 22px;
+    letter-spacing: .5px;
+}
+.logo span{
+    color: #ff3527;
+}
+.header_right{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+.login_icon{
+    background-image:url("../../assets/img/sprites.png") ;
+    width: 18px;
+    height: 18px;
+    background-position: -228px -195px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.hero{
+    background-image:url("../../assets/img/hero.svg") ;
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.hero h2{
+    font-size: 38px;
+    font-family: 'Russo One',sans-serif;
+    line-height: 46px;
+    margin:140px 0 25px 0;
+}
+.hero .description{
+    margin: 0 auto 55px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 150%;
+    max-width: 650px;
+
+}
+.hero_buttons{
+    margin-bottom: 71px;
+}
+.hero_buttons .btn{
+    margin-right: 15px;
+}
+.video{
+    position: relative;
+    margin: 0 auto;
+    width: 950px;
+}
+#promo_video{
+   margin-bottom: -10%;
+}
+
