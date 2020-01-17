@@ -1,0 +1,18 @@
+a{
+    color: black;
+}
+.btn{
+    padding: 15px 10px;
+    display: inline-block;
+    color: #eeeeee;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btn_red{
+    background: #FF3527;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+}
+.btn_transparent{
+    background:transparent;
+    border:1px solid #eeeeee;
+}
