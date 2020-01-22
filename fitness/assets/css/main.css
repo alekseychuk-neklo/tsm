@@ -73,4 +73,31 @@
 #promo_video{
    margin-bottom: -10%;
 }
+.about_container{
+    text-align: center;
+    padding-top: 250px;
+}
+.about_container h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    margin:10px auto 65px ;
+}
+.about_container .description{
+    max-width: 650px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+}
+.features_container{
+    display: flex;
+}
+.feature{
+    max-width: 50%;
+}
+
 

@@ -16,3 +16,85 @@ a{
     background:transparent;
     border:1px solid #eeeeee;
 }
+h1, h2{
+    font-family: "Open Sans", sans-serif;
+}
+/*
+кнопку скопипастил с основного проекта
+*/
+.video-play-button {
+    position: relative;
+    z-index: 10;
+    display: block;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: auto;
+    padding: 18px 20px 18px 28px;
+    width: 32px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 30px rgba(255,53,39,0.5);
+    box-shadow: 0 0 30px rgba(255,53,39,0.5);
+    cursor: pointer;
+}
+.video-play-button {
+    position: absolute;
+    top: -webkit-calc(50%);
+    top: calc(50% );
+    left: -webkit-calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+.video-play-button:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    outline: 0;
+    border-radius: 50%;
+    background: rgba(255,53,39,0.65);
+    content: "";
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+.video-play-button:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    width: 80px;
+    height: 80px;
+    outline: 0;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    -webkit-transition: all 200ms;
+    -webkit-transition: all .55s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 200ms;
+    transition: all .55s cubic-bezier(0.645,0.045,0.355,1);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.video-play-button span {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 32px solid #ff3527;
+    -webkit-transition: all .55s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all .55s cubic-bezier(0.645,0.045,0.355,1);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
