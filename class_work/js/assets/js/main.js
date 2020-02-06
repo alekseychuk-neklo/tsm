@@ -1,3 +1,41 @@
+var student1Obj = {
+    id:1,
+    firstName: 'Ololo',
+    lastName: 'Ololo',
+    active: true,
+    educationLevel: null
+
+}
+var student2Obj = {
+    id:2,
+    firstName: 'Ololo2',
+    lastName: 'Ololo',
+    active: false,
+    educationLevel: null
+}
+var student3Obj = {
+    id:3,
+    firstName: 'Ololo2',
+    lastName: 'Ololo',
+    active: false,
+    educationLevel: null
+}
+var studArr = [];
+studArr.push(student1Obj, student2Obj, student3Obj);
+
+for (var i =0; i< studArr.length; i++){
+    console.log(studArr[i])
+}
+
+
+
+
+
+
+
+
+
+
 class Student {
     constructor(firstName, lastName,age=null, distance_learning=true, specification={}){
         this.firstName = firstName;
