@@ -1,63 +1,32 @@
-var student1Obj = {
+let fruits =[
+    {name: 'banana', count: 10},
+    {name: 'orange', count: 10},
+    {name: 'apple', count: 10},
+    {name: 'lemon', count: 10},
+    {name: 'mandarin', count: 10},
+];
 
-    firstName: 'Ololo',
-    lastName: 'Ololo',
-    age: 18,
-    grades: [1,1,3,2,5],
-    course:1,
-    gender: "male"
-
+function getArgument(arr, attr) {
+    return arr.map(function (element) {
+        return element[attr];
+    })
 }
-var student2Obj = {
-
-    firstName: 'Ololo2',
-    lastName: 'Ololo2',
-    age: 18,
-    grades: [1,1,3,2,3],
-    course:1,
-    gender: "male"
-
+let tmp = getArgument(fruits, 'name');
+console.log(tmp);
+let userBooks =[
+    {name: 'Anna', books: ['Harry Potter', 'War and Peace']},
+    {name: 'Anna2', books: ['Harry Potter2', 'War and Peace2']},
+    {name: 'Anna3', books: ['Harry Potter3', 'War and Peace3']},
+    {name: 'Anna4', books: ['Harry Potter2', 'War and Peace4']},
+    {name: 'Anna5', books: ['Harry Potter5', 'War and Peace5']},
+    ];
+function getUserBooks(userBooksArr){
+    return userBooksArr.reduce(function (acc, item) {
+        return [...acc, ...item.books].reduce(function (unique, item) {
+            return unique.includes(item)?unique: [...unique, item]
+        }, []);
+    }, []);
 }
-var student3Obj = {
 
-    firstName: 'Ololo3',
-    lastName: 'Ololo3',
-    age: 32,
-    grades: [1,3,3,2,3],
-    course:1,
-    gender: "female"
-
-}
-var student4Obj = {
-
-    firstName: 'Ololo4',
-    lastName: 'Ololo4',
-    age: 18,
-    grades: [2,2,2,2,3],
-    course:1,
-    gender: "female"
-
-}
-var students =[student1Obj, student2Obj, student3Obj, student4Obj];
-
-for (let i=0; i<students.length; i++){
-    if(students[i].age>17 && students[i].age<28 && students[i].gender == 'male'){
-        let sum =0;
-        for (let j=0; j<students[i].grades.length; j++ ){
-            sum+= students[i].grades[j]
-        }
-       if((sum/students[i].grades.length) <3){
-           delete students[i].grades;
-           delete students[i].course;
-           students[i].isReadyForArmy =true;
-       }
-    }
-}
-var soldiers =[];
-for ( let i =0; i<students.length; i++){
-    if (students[i].isReadyForArmy){
-        soldiers.push(students[i]);
-    }
-}
-console.log(soldiers);
-
+books = getUserBooks(userBooks);
+console.log(books);
